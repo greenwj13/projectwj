@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+
+html,body{
+    margin: 0;
+    font-size: 16px;
+}
+h1,h2,h3,h4,p,figure{margin: 0;}
+ul,ol,li{list-style-type: none; margin: 0; padding: 0;}
+img{vertical-align: middle;} /* 거의 항상  */
+a{
+    color: #333;
+    text-decoration: none;
+}
+*{
+    font-family: '';
+    box-sizing: border-box;
+}
+/* *=모든태그 */
+
+header{
+    width: 1200px; margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+header h1{ font-size: 1.8em;} /* rem 최사위 폰트 사이즈로 배수 */
+header nav{}
+header nav a{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 50px;
+    display: inline-block;
+}
+header nav a::after{
+    content: '';
+    display: block;
+    margin: 5px auto;
+    border-bottom: 1px solid black;
+    width: 0%;
+    transition: 0.5s;
+}
+header nav a:hover:after{width: 100%;}
